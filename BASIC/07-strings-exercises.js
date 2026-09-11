@@ -20,11 +20,14 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=7226
     console.log(`estos son los
 ejercicios de strings`);
 // 6. Interpola el valor de una variable en un string
-
+        console.log(`hola, ${nombre}`)
 // 7. Reemplaza todos los espacios en blanco de un string por guiones
-
+        console.log(mensaje.replace(/\s/g, ""));
 // 8. Comprueba si una cadena de texto contiene una palabra concreta
-
+        console.log(mensaje.includes("Edward"));
 // 9. Comprueba si dos strings son iguales
-
-// 10. Comprueba si dos strings tienen la misma longitud
+        const sonIguales = nombre === mensaje;
+        console.log(sonIguales)
+// 10. Comprueba si dos strings tienen la misma longitud    
+        const mismaLongitud = nombre.length === mensaje.length;
+        console.log(mismaLongitud)

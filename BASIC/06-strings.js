@@ -20,7 +20,7 @@ console.log(greeting[6]);
 
 console.log(greeting.toUpperCase()); // Pasar todo a MAyusculas
 console.log(greeting.toLowerCase()); // Pasar todo a minusculas   
-console.log(greeting.indexOf("Hola")); // Buscar en què indice esta la palabra
+console.log(greeting.indexOf("Hola")); // Buscar en que indice esta la palabra
 console.log(greeting.indexOf("Brais"));
 console.log(greeting.indexOf("MoureDev"));
 console.log(greeting.includes("Hola")); // Buscar si esta incluida la palabra
