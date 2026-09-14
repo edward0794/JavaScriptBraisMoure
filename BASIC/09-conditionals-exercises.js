@@ -40,7 +40,7 @@
     console.log(edadAdulto >= 18 ? "Adulto" : "Menor");
 
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
-    const mes = "Febrero";
+    let mes = "Febrero";
 
     if(mes === "Marzo" || mes === "Abril" || mes === "Mayo") {
         console.log("Estamos en primavera")
@@ -93,44 +93,55 @@
     let estacion;
     
     switch (mes) {
-        case 0: 
-            estacion = "primavera"
-            break
-        case 1:
-            estacion = "primavera"
-            break
-        case 2: 
-            estacion = "primavera"
-            break
-        case 3: 
+        case "Marzo":
+        case "Abril":
+        case "Mayo":
+            estacion = "Primavera"
+            break;
+        case "Junio": 
+        case "Julio": 
+        case "Agosto": 
             estacion = "Verano"
-            break
-        case 4: 
-            estacion = "Verano"
-            break
-        case 5: 
-            estacion = "Verano"
-            break
-        case 6: 
+            break;
+        case "Septiembre": 
+        case "Octubre": 
+        case "Noviembre": 
             estacion = "Otoño"
-            break
-        case 7: 
-            estacion = "Otoño"
-            break
-        case 8: 
-            estacion = "Otoño"
-            break
-        case 9: 
+            break;
+        case "Diciembre":
+        case "Enero":
+        case "Febrero":
             estacion = "Invierno"
-            break
-        case 10: 
-            estacion = "Invierno"
-            break
-        case 11: 
-            estacion = "Invierno"
-            break
+            break;
         default:
-            estacion = "Estacion no encontrada"
+            estacion = "No encontrada";
     }
-    console.log(estacion)
+    console.log(estacion);
+
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
+
+let diasFaltantes;
+
+switch (mes) {
+    case "Enero":
+    case "Marzo":
+    case "Mayo":
+    case "Julio":
+    case "Agosto":
+    case "Octubre":
+    case "Diciembre":
+        diasFaltantes = "El mes tiene 31 dias"
+        break;
+    case "Abril":
+    case "Junio":
+    case "Septiembre":
+    case "Noviembre":
+        diasFaltantes = "El mes tiene 30 dias"
+        break;
+    case "Febrero":
+        diasFaltantes = "El mes tiene 28 dias"
+        break;
+    default:
+        diasFaltantes = "Mes no encontrado"
+}
+console.log(diasFaltantes);
