@@ -23,24 +23,24 @@ console.log(myMap)
 
 // Métodos y propiedades
 
-// set
+// set (Agregar o modificar)
 
 myMap.set("alias", "mouredev")
 myMap.set("name", "Brais Moure")
 
 console.log(myMap)
 
-// get
+// get (Obtener)
 
 console.log(myMap.get("name"))
 console.log(myMap.get("surname"))
 
-// has
+// has (Comprobar)
 
 console.log(myMap.has("surname"))
 console.log(myMap.has("age"))
 
-// delete
+// delete (Eliminar)
 
 myMap.delete("email")
 
