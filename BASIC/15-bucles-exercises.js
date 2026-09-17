@@ -70,11 +70,70 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=12732
     }
     console.log(contador)
 // 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
+    let numeros = [5, 10, 15, 20];
+    let producto = 1;
 
+    for(i = 0; i < numeros.length; i++) {
+         producto *= numeros[i]
+    }
+    console.log(producto)
+
+    i = 0
+    producto = 1;
+    while(i < numeros.length) {
+        producto *= numeros[i]
+        i++
+    }
+    console.log(producto)
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
+    let num = 5;
+    for(i = 1; i <= 10; i++) {
 
-// 8. Usa un bucle para invertir una cadena de texto
+        let resultado = num * i
+        console.log(`${num} * ${i} = ${resultado}`)
+    }
+
+    i = 1
+    while(i <= 10){
+        let resultado = num * i
+        console.log(`${num} * ${i} = ${resultado}`)
+        i++
+    }
+// 8. Usa un bucle para invertir una cadena de texto    
+    
+    let word = "Vacaciones";
+    let invertida = "";
+
+    for (let i = palabra.length - 1; i >= 0; i--) {
+        invertida += palabra[i];
+    }
+    console.log(invertida)
+
 
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
+    let a = 0;
+    let b = 1;
+
+    for (let i = 0; i < 10; i++) {
+        console.log(a);
+
+    let siguiente = a + b;
+    a = b;
+    b = siguiente;
+}
 
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+
+    let numbers = [5, 12, 8, 20, 15, 3, 25, 10];
+    let mayores = [];
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        if (numbers[i] > 10) {
+            mayores.push(numbers[i]);
+     }
+
+}
+
+console.log(mayores);
+
