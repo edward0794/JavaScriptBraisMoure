@@ -75,10 +75,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=18630
 
 // 7. Crea una clase que haga uso de getters y setters
     class Person {
-        nombre
-        apellido
-        edad
-
+    
         constructor(nombre, apellido, edad){
             this.nombre = nombre;
             this.apellido = apellido;
@@ -88,17 +85,20 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=18630
         get name() {
             return this.nombre;
         }
+        get edad() {
+            return this._edad;
+        }
         set edad(edad) {
-            this.edad = edad;
+            this._edad = edad;
         }
     }
-    person = new Person("Camilo", "Torres", 24)
+    let person = new Person("Camilo", "Torres", 24)
     console.log(person);
 // 8. Modifica la clase con getters y setters para que use propiedades privadas
     class Person2 {
-        nombre
+
         #apellido
-        edad
+        
 
         constructor(nombre, apellido, edad){
             this.nombre = nombre;
@@ -109,16 +109,31 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=18630
         get name() {
             return this.nombre;
         }
+        get apellido() {
+            return this.#apellido;
+        }
         set apellido(apellido) {
-            this.#apellido = this.apellido;
+            this.#apellido = apellido;
         }
     }
-    person2 = new Person2("Carlos", "Torres", 45);
+    let person2 = new Person2("Carlos", "Torres", 45);
     console.log(person2);
 
 // 9. Utiliza los get y set y muestra sus valores
-    console.log(person);
-    console.log(person2);
+    
+    console.log(person.name);
+    console.log(person.edad);
+
+    person.edad = 25;
+
+    console.log(person.edad);
+
+    console.log(person2.name);
+    console.log(person2.apellido);
+
+    person2.apellido = "Gómez";
+
+    console.log(person2.apellido);
 
 // 10. Sobrescribe un método de una clase que utilice herencia 
     class Gato extends Animal {
