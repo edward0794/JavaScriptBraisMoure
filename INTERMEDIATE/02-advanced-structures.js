@@ -32,7 +32,7 @@ console.log(sum)
 
 // flat
 
-let nestedArray = [1, [2, [3, [4]]]]
+let nestedArray = [1, [2, [3, [4]]]]    
 console.log(nestedArray)
 let flatArray = nestedArray.flat(1)
 console.log(flatArray)
