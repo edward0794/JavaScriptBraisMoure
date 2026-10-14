@@ -85,7 +85,7 @@ Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=7514
 // 7. Crea un mapa que almacene información de usuarios (nombre, edad y email) e itera los datos
     let usuarios = new Map ([
         [1, { nombre: "Edward", edad: 32, email: "edward@gmail.com" }],
-        [2, { nombre: "David", edad: 22, email: "david@gmail.com" }],
+        [2, { nombre: "David", edad: 14, email: "david@gmail.com" }],
         [3, { nombre: "Marcela", edad: 55, email: "marcela@gmail.com" }]
     ]);
     usuarios.forEach((value, key) => {
@@ -100,6 +100,17 @@ Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=7514
     console.log(nombresUsuarios);
 
 // 9. Dado el mapa anterior, obtén un array con los email de los usuarios mayores de edad y transfórmalo a un set
-    
+    let email = [];
 
+    usuarios.forEach(usuario => {
+            if(usuario.edad >= 18) {
+                email.push(usuario.email);
+            }
+        })
+    
+    console.log(email);
+
+    let emailUsuarios = new Set(email);
+    console.log(emailUsuarios);
+    
 // 10. Transforma el mapa en un objeto, a continuación, transforma el objeto en un mapa con clave el email de cada usuario y como valor todos los datos del usuario
